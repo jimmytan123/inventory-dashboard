@@ -30,7 +30,7 @@ const CardPurchaseSummary = () => {
             </h2>
             <hr />
           </div>
-          <div>
+          <div className='overflow-auto'>
             <div className="mb-4 mt-7 px-7">
               <p className="text-xs text-gray-400">Purchased</p>
               <div className="flex items-center">
@@ -60,7 +60,7 @@ const CardPurchaseSummary = () => {
             <ResponsiveContainer width="100%" height={180} className="p-2">
               <AreaChart
                 data={purchaseData}
-                margin={{ top: 0, right: 0, left: -50, bottom: 45 }}
+                margin={{ top: 0, right: 0, left: -50, bottom: 0 }}
               >
                 <XAxis dataKey="date" tick={false} axisLine={false} />
                 <YAxis tickLine={false} tick={false} axisLine={false} />
